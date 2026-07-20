@@ -78,13 +78,17 @@
           <a href="${base}index.html" class="logo" aria-label="Deep Hill — Home">
             <img src="${base}assets/images/deep-hill-logo.png" alt="Deep Hill — Built on Depth. Elevated by Vision." class="logo__img" width="160" height="72">
           </a>
-          <nav class="nav" id="nav" aria-label="Primary">
-            ${mainNavLinks}
-          </nav>
-          <a href="${base}contact.html" class="btn btn--primary btn--sm header__cta">Contact Us</a>
           <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
+        </div>
+      </div>
+      <div class="site-header__ribbon">
+        <div class="container site-header__ribbon-inner">
+          <nav class="nav" id="nav" aria-label="Primary">
+            ${mainNavLinks}
+            <a href="${base}contact.html" class="btn btn--primary btn--sm nav__contact${page === 'contact' ? ' nav__contact--active' : ''}">Contact Us</a>
+          </nav>
         </div>
       </div>
     </header>

@@ -35,7 +35,7 @@
         });
       });
 
-      nav.querySelectorAll('.nav__link, .nav__dropdown-link').forEach((link) => {
+      nav.querySelectorAll('.nav__link, .nav__dropdown-link, .nav__contact').forEach((link) => {
         link.addEventListener('click', () => {
           nav.classList.remove('nav--open');
           menuToggle.classList.remove('menu-toggle--active');

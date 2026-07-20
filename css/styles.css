@@ -19,7 +19,8 @@
   --font-serif: 'Cinzel', Georgia, 'Times New Roman', serif;
   --container-max: 1280px;
   --site-bar-height: 88px;
-  --header-height: var(--site-bar-height);
+  --site-ribbon-bar-height: 52px;
+  --header-height: calc(var(--site-bar-height) + var(--site-ribbon-bar-height));
 
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -156,7 +157,6 @@ ul { list-style: none; }
 
 .site-header__bar {
   height: var(--site-bar-height);
-  border-bottom: 1px solid var(--color-border);
 }
 
 .site-header__inner,
@@ -165,6 +165,33 @@ ul { list-style: none; }
   align-items: center;
   justify-content: space-between;
   height: 100%;
+}
+
+.site-header__ribbon {
+  height: var(--site-ribbon-bar-height);
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-header__ribbon-inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.site-header__ribbon .nav {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.nav__contact {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.nav__contact--active {
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.35);
 }
 
 .logo {
@@ -1194,9 +1221,24 @@ a.hub-card {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --header-height: var(--site-bar-height);
+  }
+
+  .site-header__ribbon {
+    height: 0;
+    overflow: visible;
+    border: none;
+    background: transparent;
+  }
+
+  .site-header__ribbon-inner {
+    display: contents;
+  }
+
   .nav {
     position: fixed;
-    top: var(--header-height);
+    top: var(--site-bar-height);
     left: 0;
     right: 0;
     flex-direction: column;
@@ -1210,7 +1252,7 @@ a.hub-card {
     transition: all var(--transition);
     pointer-events: none;
     z-index: 999;
-    max-height: calc(100vh - var(--header-height));
+    max-height: calc(100vh - var(--site-bar-height));
     overflow-y: auto;
   }
 
@@ -1241,9 +1283,11 @@ a.hub-card {
     font-size: 0.8125rem;
   }
 
-  .header .btn--primary,
-  .header__cta {
-    display: none;
+  .nav__contact {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
   }
 
   .nav--open {
