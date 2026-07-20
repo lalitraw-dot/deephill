@@ -30,7 +30,7 @@
       { id: 'case-studies', label: 'Case Studies', href: `${base}case-studies/index.html`, children: [
         { label: 'Audit Management Platform', href: `${base}case-studies/audit-management-platform.html` },
         { label: 'End-to-End Hedge Accounting Platform', href: `${base}case-studies/hedge-accounting-platform.html` },
-        { label: 'Multi-City Booking & Schedule Management', href: `${base}case-studies/sports-booking-system.html` },
+        { label: 'GoBook — Venue Booking Platform', href: `${base}case-studies/gobook-venue-booking.html` },
         { label: 'Regulatory Reporting Platform', href: `${base}case-studies/regulatory-reporting-platform.html` },
         { label: 'Data Platform & BI Implementation', href: `${base}case-studies/ecommerce-data-bi.html` },
         { label: 'View all case studies', href: `${base}case-studies/index.html`, divider: true },
@@ -118,7 +118,7 @@
               <h4>Case Studies</h4>
               <a href="${base}case-studies/audit-management-platform.html">Audit Management Platform</a>
               <a href="${base}case-studies/hedge-accounting-platform.html">Hedge Accounting Platform</a>
-              <a href="${base}case-studies/sports-booking-system.html">Sports Booking System</a>
+              <a href="${base}case-studies/gobook-venue-booking.html">GoBook Venue Booking</a>
               <a href="${base}case-studies/regulatory-reporting-platform.html">Regulatory Reporting</a>
               <a href="${base}case-studies/ecommerce-data-bi.html">E-Commerce Data &amp; BI</a>
             </div>
