@@ -932,6 +932,10 @@ a.hub-card {
   background: linear-gradient(135deg, #1A1A2E 0%, #5b21b6 100%);
 }
 
+.case-card__image--gobook {
+  background: linear-gradient(135deg, #1A1A2E 0%, #047857 55%, #059669 100%);
+}
+
 .case-card__tag {
   font-size: 0.875rem;
   font-weight: 600;
@@ -1370,6 +1374,7 @@ a.hub-card {
 .case-page-hero--sports { background: linear-gradient(135deg, #1A1A2E 0%, #0E9488 100%); }
 .case-page-hero--regulatory { background: linear-gradient(135deg, #1A1A2E 0%, #4a3728 100%); }
 .case-page-hero--ecommerce { background: linear-gradient(135deg, #1A1A2E 0%, #5b21b6 100%); }
+.case-page-hero--gobook { background: linear-gradient(135deg, #1A1A2E 0%, #047857 50%, #10B981 100%); }
 
 .case-page-hero__inner {
   position: relative;
