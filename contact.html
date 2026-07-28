@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Deep Hill to discuss digital transformation, application development, and technology consulting.">
+  <meta name="description" content="Contact Deep Hill — onboard your venue, marketing inquiries, or general questions.">
   <title>Contact | Deep Hill</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,31 +15,63 @@
   <div id="site-header"></div>
 
   <main>
-    <section class="cta" style="min-height: calc(100vh - var(--header-height)); display: flex; align-items: center; padding-top: calc(var(--header-height) + 2rem);">
-      <div class="container cta__inner">
-        <h1 class="cta__title">Ready to Transform Your Business?</h1>
-        <p class="cta__subtitle">Let's discuss how Deep Hill can accelerate your digital journey. Reach out to schedule a consultation with our team.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 1rem;">
-          <a href="mailto:support@deephill.in" class="btn btn--white btn--lg">Schedule a Consultation</a>
-          <a href="services.html" class="btn btn--outline btn--lg">Explore Services</a>
+    <section class="contact-page">
+      <div class="container contact-page__inner">
+        <header class="contact-page__header">
+          <h1 class="contact-page__title">Contact Us</h1>
+          <p class="contact-page__subtitle">Tell us how we can help. Your message is sent directly to our team at Deep Hill.</p>
+        </header>
+
+        <div id="contact-form-success" class="contact-form__success" hidden role="status">
+          Thank you — we received your message and will get back to you soon.
         </div>
-        <div class="contact-details">
-          <p class="contact-details__label">Registered Address</p>
-          <address class="contact-details__address">
-            Deephill Consulting<br>
-            Level 12, Harbour Centre<br>
-            123 George Street<br>
-            Sydney NSW 2000<br>
-            Australia
-          </address>
-          <p class="contact-details__phone">
-            Your regional contact:
-            <a href="tel:+919355005285">+91 9355005285</a>
-          </p>
-          <p class="contact-details__email">
-            <a href="mailto:support@deephill.in">Support@deephill.in</a>
-          </p>
-        </div>
+
+        <form
+          class="contact-form"
+          id="contact-form"
+          action="https://formsubmit.co/support@deephill.in"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="Deep Hill website — new contact form">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://deephill.in/contact.html?sent=1">
+          <input type="text" name="_honey" class="contact-form__honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="reason">Reason</label>
+            <select class="contact-form__input contact-form__select" id="reason" name="reason" required>
+              <option value="" disabled selected>Select a reason</option>
+              <option value="Onboard venue">Onboard venue</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="name">Name</label>
+              <input class="contact-form__input" type="text" id="name" name="name" required autocomplete="name" maxlength="200">
+            </div>
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="contact">Contact number</label>
+              <input class="contact-form__input" type="tel" id="contact" name="contact" required autocomplete="tel" inputmode="tel" maxlength="20">
+            </div>
+          </div>
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="email">Email</label>
+            <input class="contact-form__input" type="email" id="email" name="email" required autocomplete="email" maxlength="254">
+          </div>
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="purpose">Describe your purpose</label>
+            <textarea class="contact-form__input contact-form__textarea" id="purpose" name="purpose" required rows="5" maxlength="4000" placeholder="Share a few details so we can respond effectively."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg contact-form__submit">Send message</button>
+          <p class="contact-form__note">We typically respond within one business day.</p>
+        </form>
       </div>
     </section>
   </main>

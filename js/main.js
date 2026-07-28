@@ -51,6 +51,17 @@
       '.service-card, .service-detail, .why-card, .case-card, .testimonial, .about__visual, .about__content, .hub-card, .page-card'
     );
 
+    const contactSuccess = document.getElementById('contact-form-success');
+    const contactForm = document.getElementById('contact-form');
+    if (contactSuccess && contactForm) {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('sent') === '1') {
+        contactSuccess.hidden = false;
+        contactForm.hidden = true;
+        window.history.replaceState({}, '', window.location.pathname);
+      }
+    }
+
     if (revealElements.length) {
       const observer = new IntersectionObserver(
         (entries) => {
