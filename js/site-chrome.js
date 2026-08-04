@@ -16,6 +16,7 @@
       { id: 'privacy', label: 'Privacy', href: `${base}privacy/index.html`, children: [
         { label: 'Privacy Policy hub', href: `${base}privacy/index.html`, divider: true },
         { label: 'GoBook', href: `${base}privacy/gobook.html` },
+        { label: 'GoBook Delete Account', href: `${base}privacy/gobook-delete-account.html` },
       ]},
       { id: 'solutions', label: 'Solutions', href: `${base}solutions.html`, children: [
         { label: 'Why Deep Hill', href: `${base}solutions.html` },
@@ -119,11 +120,13 @@
               <a href="${base}contact.html">Contact</a>
               <a href="${base}privacy/index.html">Privacy Policy</a>
               <a href="${base}privacy/gobook.html">GoBook Privacy</a>
+              <a href="${base}privacy/gobook-delete-account.html">GoBook Delete Account</a>
             </div>
             <div class="footer__col">
               <h4>Legal</h4>
               <a href="${base}privacy/index.html">Privacy Policy</a>
               <a href="${base}privacy/gobook.html">GoBook Privacy Policy</a>
+              <a href="${base}privacy/gobook-delete-account.html">GoBook Delete Account</a>
             </div>
             <div class="footer__col">
               <h4>Case Studies</h4>

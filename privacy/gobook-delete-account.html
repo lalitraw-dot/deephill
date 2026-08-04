@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request deletion of your GoBook account — submit your registered phone number to Deep Hill support.">
+  <title>GoBook Delete Account | Deep Hill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../assets/images/deep-hill-logo.png">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-page="privacy" data-base="../">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="contact-page">
+      <div class="container contact-page__inner">
+        <header class="contact-page__header">
+          <a href="index.html" class="policy-page__back">← Privacy Policy</a>
+          <h1 class="contact-page__title">GoBook Delete Account</h1>
+          <p class="contact-page__subtitle">
+            Request permanent deletion of your GoBook account. Enter the mobile number registered on your account and submit your request to our support team.
+          </p>
+        </header>
+
+        <div id="delete-account-success" class="contact-form__success" hidden role="status">
+          Your account deletion request was received. We will verify your phone number and process the request in line with our
+          <a href="gobook.html">Privacy Policy</a>.
+        </div>
+
+        <form
+          class="contact-form contact-form--delete"
+          id="delete-account-form"
+          action="https://formsubmit.co/support@deephill.in"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="GoBook — account deletion request">
+          <input type="hidden" name="request_type" value="GoBook account deletion">
+          <input type="hidden" name="product" value="GoBook">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://deephill.in/privacy/gobook-delete-account.html?sent=1">
+          <input type="text" name="_honey" class="contact-form__honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <p class="contact-form__warning">
+            This action requests permanent deletion of your GoBook account and associated personal data, except where we must retain information by law.
+          </p>
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="phone">Registered mobile number</label>
+            <input
+              class="contact-form__input"
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              autocomplete="tel"
+              inputmode="tel"
+              maxlength="15"
+              placeholder="e.g. 9876543210 or +919876543210"
+            >
+            <p class="contact-form__hint">Use the same number you use to sign in to GoBook.</p>
+          </div>
+
+          <button type="submit" class="btn btn--danger btn--lg contact-form__submit">Delete account</button>
+          <p class="contact-form__note">
+            Your request is emailed to <a href="mailto:support@deephill.in">support@deephill.in</a>. You can also email us directly from the address registered on your account.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../js/site-chrome.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
