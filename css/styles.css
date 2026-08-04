@@ -1223,6 +1223,102 @@ a.hub-card {
 }
 
 /* ============================================
+   Privacy policy pages
+   ============================================ */
+
+.policy-page__back {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.policy-page__back:hover {
+  text-decoration: underline;
+}
+
+.policy-page-body {
+  padding: 3rem 0 5rem;
+}
+
+.policy-prose {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.policy-prose h2 {
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.policy-prose h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.policy-prose p {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.policy-prose ul {
+  list-style: disc;
+  padding-left: 1.375rem;
+  margin-bottom: 1rem;
+}
+
+.policy-prose ul li {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-bottom: 0.35rem;
+}
+
+.policy-prose a {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.policy-prose a:hover {
+  text-decoration: underline;
+}
+
+.policy-index {
+  padding: 3rem 0 5rem;
+}
+
+.policy-index__grid {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 36rem;
+}
+
+.policy-index__card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.policy-index__link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+/* ============================================
    Footer
    ============================================ */
 

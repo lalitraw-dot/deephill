@@ -36,6 +36,9 @@
         { label: 'View all case studies', href: `${base}case-studies/index.html`, divider: true },
       ]},
       { id: 'careers', label: 'Careers', href: `${base}careers.html` },
+      { id: 'privacy', label: 'Privacy Policy', href: `${base}privacy/index.html`, children: [
+        { label: 'GoBook', href: `${base}privacy/gobook.html` },
+      ]},
     ],
     services: [
       { label: 'Digital Transformation', href: `${base}services.html#digital-transformation` },
@@ -115,6 +118,11 @@
               <a href="${base}contact.html">Contact</a>
             </div>
             <div class="footer__col">
+              <h4>Legal</h4>
+              <a href="${base}privacy/index.html">Privacy Policy</a>
+              <a href="${base}privacy/gobook.html">GoBook Privacy Policy</a>
+            </div>
+            <div class="footer__col">
               <h4>Case Studies</h4>
               <a href="${base}case-studies/audit-management-platform.html">Audit Management Platform</a>
               <a href="${base}case-studies/hedge-accounting-platform.html">Hedge Accounting Platform</a>
@@ -128,7 +136,8 @@
         <div class="footer__bottom">
           <p>© 2026 Deep Hill. All rights reserved.</p>
           <div class="footer__legal">
-            <a href="#">Privacy Policy</a>
+            <a href="${base}privacy/index.html">Privacy Policy</a>
+            <a href="${base}privacy/gobook.html">GoBook</a>
             <a href="#">Terms of Service</a>
             <a href="#">Cookie Settings</a>
           </div>
