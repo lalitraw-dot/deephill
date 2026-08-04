@@ -13,6 +13,10 @@
         { label: 'View all services', href: `${base}services.html`, divider: true },
       ]},
       { id: 'about', label: 'About', href: `${base}about.html` },
+      { id: 'privacy', label: 'Privacy', href: `${base}privacy/index.html`, children: [
+        { label: 'Privacy Policy hub', href: `${base}privacy/index.html`, divider: true },
+        { label: 'GoBook', href: `${base}privacy/gobook.html` },
+      ]},
       { id: 'solutions', label: 'Solutions', href: `${base}solutions.html`, children: [
         { label: 'Why Deep Hill', href: `${base}solutions.html` },
         { label: 'Discovery & Strategy', href: `${base}solutions.html#engage` },
@@ -36,9 +40,6 @@
         { label: 'View all case studies', href: `${base}case-studies/index.html`, divider: true },
       ]},
       { id: 'careers', label: 'Careers', href: `${base}careers.html` },
-      { id: 'privacy', label: 'Privacy Policy', href: `${base}privacy/index.html`, children: [
-        { label: 'GoBook', href: `${base}privacy/gobook.html` },
-      ]},
     ],
     services: [
       { label: 'Digital Transformation', href: `${base}services.html#digital-transformation` },
@@ -116,6 +117,8 @@
               <a href="${base}careers.html">Careers</a>
               <a href="${base}industries.html">Industries</a>
               <a href="${base}contact.html">Contact</a>
+              <a href="${base}privacy/index.html">Privacy Policy</a>
+              <a href="${base}privacy/gobook.html">GoBook Privacy</a>
             </div>
             <div class="footer__col">
               <h4>Legal</h4>
